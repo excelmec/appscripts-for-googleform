@@ -19,7 +19,7 @@ function sendConfirmation(e) {
     MailApp.sendEmail({
       to: email,
       subject: "confirmation mail",
-      body: body.getText()
+      htmlBody: body.getText()
     });
   
     //delete the temp copy
